@@ -36,4 +36,4 @@ you can also use the Docker files under `docker` to start a container configured
 
 # Results and figures
 
-The IPython notebooks under `notebooks` contain the code to generate the figures used in the paper (maps, metrics, etc.)
+The IPython notebooks under `notebooks` contain the code to generate the figures used in the paper (maps, metrics, etc.), run inference on saved models, etc.
