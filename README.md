@@ -3,6 +3,8 @@
 Raúl Ramos-Pollán, _Universidad de Antioquia_, Colombia, raul.ramos@udea.edu.co<br/>
 Fabio A. González, _Universidad Nacional de Colombia_, fagonzalezo@unal.edu.co
 
+<img src='imgs/benelux-humanpop-class2-small.png'/>
+
 # Downloading datasets
 The four datasets  in our work with Sentinel2 RGB imagery and different labels are available at Zenodo:
 
