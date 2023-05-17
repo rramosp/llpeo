@@ -16,9 +16,9 @@ The four datasets  in our work with Sentinel2 RGB imagery and different labels a
 # Running the experiments (tranining models)
 
 1. Download the zip file any of the datasets above and unzip, for instance under `/opt/data`
-2. Select the script for `esaworldcover` or `humanpop` that you want to run, and check the location of the `DATASET` variable is correct. The `TAG` will be used to report results to `wandb`
+2. Under `scripts` select the script for `esaworldcover` or `humanpop` that you want to run, and check the location of the `DATASET` variable is correct. The `TAG` will be used to report results to `wandb`
 3. Have your `wandb` token ready.
-4. Run the experiment
+4. Run the experiment:
 
 ```
 cd scripts
