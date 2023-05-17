@@ -1,7 +1,7 @@
 # Lightweight learning with label proportions on satellite imagery
 
-Raúl Ramos-Pollán, raul.ramos@udea.edu.co<br/>
-Fabio A. González, fagonzalezo@unal.edu.co
+Raúl Ramos-Pollán, _Universidad de Antioquia_, Colombia, raul.ramos@udea.edu.co<br/>
+Fabio A. González, _Universidad Nacional de Colombia_, fagonzalezo@unal.edu.co
 
 # Downloading datasets
 The four datasets  in our work with Sentinel2 RGB imagery and different labels are available at Zenodo:
