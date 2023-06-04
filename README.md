@@ -42,7 +42,7 @@ The IPython notebooks under `notebooks` contain the code to generate the figures
 
 The following figures are referenced within the paper
 
-**Figure 6**. $\texttt{benelux}$ area of interest, covering 72.213 km$^2$ (top left). Tiling of $1km \times 1km$ over the surroundings of Amsterdam (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
+**Figure 6**. $\texttt{benelux}$ area of interest, covering 72.213 $km^2$ (top left). Tiling of $1km \times 1km$ over the surroundings of Amsterdam (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
 
 <img src='imgs/figure_06.jpg'/>
 <hr/>
@@ -61,3 +61,27 @@ The following figures are referenced within the paper
 
 <img src='imgs/figure_09.jpg'/>
 <hr/>
+
+
+**Figure 10**: Data splitting for $\texttt{benelux}$ (left) and $\texttt{colombia-ne}$ (right) so that any commune (municipality) has all its chips within the same split. Train is purple, yellow is test, green is validation.
+
+<img src='imgs/figure_10.jpg'/>
+<hr/>
+
+**Figure 11**: Predicting label proportions for $\texttt{esaworldcover}$ over $\texttt{benelux}$ classes 1, 2 and 3. White contours represent communes in test and validation. The rest are used in training.
+
+<img src='imgs/figure_11.jpg'/>
+<hr/>
+
+**Figure 12**: Predicting label proportions for $\texttt{esaworldcover}$ over $\texttt{colombia-ne}$ classes 1, 2 and 3. Recall that class 3 is largely under represented in this dataset. White contours represent communes in test and validation. The rest are used in training.
+
+<img src='imgs/figure_12.jpg'/>
+<hr/>
+
+
+
+**Figure 13**: Predicting label proportions for $\texttt{humanpop}$ world cover over $\texttt{benelux}$ class 2 (more than 1600 inhabitants/$km^2$). White contours represent communes in test and validation. The rest are used in training.
+
+<img src='imgs/figure_13.jpg'/>
+<hr/>
+
