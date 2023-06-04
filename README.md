@@ -86,7 +86,7 @@ The following figures are referenced within the paper. In turn, captions ocasion
 <hr/>
 
 <a id="table-cross-inference"/>**Table cross inference**
-Performance results when using using the `downconv` model trained in one region to make inference in the other region. We include the results from Table III for reference (rows 1 and 3).  Observe that cross-region inference always degrades performance (row 1 vs row 2 and row 3 vs row 4).
+In the case of  humanpop` for `colombia-ne` the large class imbalance produced all models to emit mostly a single class proportions prediction with the majority class. With this, we hypothesized on whether a lack of variability in training data would affect performance and, thus, we made cross inference, using models trained on `benelux` to predict labels in `colombia-ne` and the other way around. The following table shows the performance results when using using the `downconv` model trained in one region to make inference in the other region. We include the results from Table III for reference (rows 1 and 3).  Observe that cross-region inference always degrades performance (row 1 vs row 2 and row 3 vs row 4).
 <img src='imgs/table-cross-inference.png'/>
 <hr/>
 
