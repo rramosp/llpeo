@@ -37,3 +37,27 @@ you can also use the Docker files under `docker` to start a container configured
 # Results and figures
 
 The IPython notebooks under `notebooks` contain the code to generate the figures used in the paper (maps, metrics, etc.), run inference on saved models, etc.
+
+# Extra figures from the paper
+
+The following figures are referenced within the paper
+
+**Figure 6**. $\texttt{benelux}$ area of interest, covering 72.213 km$^2$ (top left). Tiling of $1km \times 1km$ over the surroundings of Amsterdam (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
+
+<img src='imgs/figure_06.jpg'/>
+<hr/>
+
+**Figure 7**. $\texttt{colombia-ne}$ area of interest, covering 69.191 km$^2$ (top left, on the north west of South America). Tiling of $1km \times 1km$ over the surroundings of the city of Bucaramanga (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
+
+<img src='imgs/figure_07.jpg'/>
+<hr/>
+
+**Figure 8**. Aggregated distributions of class proportions for $\texttt{colombia-ne}$ and $\texttt{benelux}$ (a,b,c,d). Observe that the distributions are quite similar when aggregated from communes and from chips, as it should be, since the chips cover 100\% of communes. This is also a sanity check for the datasets. The small differences come from chips overlapping several communes at their borders. See Tables II and III for label meanings. Figure e) shows the distribution  of commune sizes in both AOIs. Since each chip is 1 $km^2$ this also represents the distribution of communes sizes in $km^2$
+
+<img src='imgs/figure_08.jpg'/>
+<hr/>
+
+**Figure 9**: $\texttt{benelux}$ selected RGB images from the commune of Ichtegem (Belgium) with fine grained chip level labels (rows two and four) and proportions at chip level (rows 3 and 5). The commune level proportions are shown besides the chip level proportions for $\texttt{esaworldcover}$ and $\texttt{humanpop}$. Recall that we are training using this *commune proportions* shown here assuming that chips do not have individual labels. When a chip intercepts more than one commune, such as chip $\texttt{006c47afde9e5}$ below, its associated commune level proportions are obtained by combining the proportions of the communes it overlaps, weighted proportionally to the amount of overlapping with each commune. Proportions and labels for individual chips are used only to compute performance metrics. See Tables II and III for label meanings.
+
+<img src='imgs/figure_09.jpg'/>
+<hr/>
