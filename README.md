@@ -18,6 +18,8 @@ The four datasets  in our work with Sentinel2 RGB imagery and different labels a
 |benelux |esaworldcover |72213 |10m |https://zenodo.org/record/7935237|
 |benelux |humanpop |72213 |250m |https://zenodo.org/record/7939348
 
+The Sentinel 2 image chips are the same in both $\texttt{colombia-ne}$ datasets and both $\texttt{benelux}$, they differ on the labels. Observe that we train our models with label proportions that we obtain from these labels at coarser geometries (communes or municipalities). We only use the actual labels at to compute chip level performance metrics. In a real world scenario these fine grained labels would **not** be available, only the label proportions.
+
 # Running the experiments (tranining models)
 
 1. Download the zip file any of the datasets above and unzip, for instance under `/opt/data`
