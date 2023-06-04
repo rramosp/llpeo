@@ -8,7 +8,7 @@ This work addresses the challenge of producing chip level predictions on satelli
 
 <img src='imgs/benelux-humanpop-class2-small.png'/>
 
-# <a id="datasets"></a> Downloading datasets
+# <a id="datasets"/> Downloading datasets
 The four datasets  in our work with Sentinel2 RGB imagery and different labels are available at Zenodo:
 
 |region |labels| km2| resolution | available at |
@@ -52,7 +52,7 @@ The following figures are referenced within the paper
 <img src='imgs/figure_07.jpg'/>
 <hr/>
 
-**Figure 8**. Aggregated distributions of class proportions for $\texttt{colombia-ne}$ and $\texttt{benelux}$ (a,b,c,d). Observe that the distributions are quite similar when aggregated from communes and from chips, as it should be, since the chips cover 100\% of communes. This is also a sanity check for the datasets. The small differences come from chips overlapping several communes at their borders. See Tables II and III for label meanings. Figure e) shows the distribution  of commune sizes in both AOIs. Since each chip is 1 $km^2$ this also represents the distribution of communes sizes in $km^2$
+<a id="fig8"/>**Figure 8**. Aggregated distributions of class proportions for $\texttt{colombia-ne}$ and $\texttt{benelux}$ (a,b,c,d). Observe that the distributions are quite similar when aggregated from communes and from chips, as it should be, since the chips cover 100\% of communes. This is also a sanity check for the datasets. The small differences come from chips overlapping several communes at their borders. See Tables II and III for label meanings. Figure e) shows the distribution  of commune sizes in both AOIs. Since each chip is 1 $km^2$ this also represents the distribution of communes sizes in $km^2$
 
 <img src='imgs/figure_08.jpg'/>
 <hr/>
