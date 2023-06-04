@@ -70,17 +70,17 @@ The following figures are referenced within the paper. In turn, captions ocasion
 <img src='imgs/figure_10.jpg'/>
 <hr/>
 
-<a id="fig11"/>**Figure 11**: Predicting label proportions for `esaworldcover` over `benelux` classes 1, 2 and 3. White contours represent communes in test and validation. The rest are used in training.
+<a id="fig11"/>**Figure 11**: Predicting label proportions for `esaworldcover` over `benelux` classes 1, 2 and 3 with model `downconv`. White contours represent communes in test and validation. The rest are used in training. We include train, validation and test data to make the visualization easier, and mark in white the communes used for validation and train. This model has no overfitting so visualizing all data together should not distort the perception on its performance.
 
 <img src='imgs/figure_11.jpg'/>
 <hr/>
 
-<a id="fig12"/>**Figure 12**: Predicting label proportions for `esaworldcover` over `colombia-ne` classes 1, 2 and 3. Recall that class 3 is largely under represented in this dataset. White contours represent communes in test and validation. The rest are used in training.
+<a id="fig12"/>**Figure 12**: Predicting label proportions for `esaworldcover` over `colombia-ne` classes 1, 2 and 3 with model `downconv`. Recall that class 3 is largely under represented in this dataset. White contours represent communes in test and validation. The rest are used in training. We include train, validation and test data to make the visualization easier, and mark in white the communes used for validation and train. This model has no overfitting so visualizing all data together should not distort the perception on its performance.
 
 <img src='imgs/figure_12.jpg'/>
 <hr/>
 
-<a id="fig13"/>**Figure 13**: Predicting label proportions for `humanpop` world cover over `benelux` class 2 (more than 1600 inhabitants/$km^2$). White contours represent communes in test and validation. The rest are used in training.
+<a id="fig13"/>**Figure 13**: Predicting label proportions for `humanpop` world cover over `benelux` class 2 (more than 1600 inhabitants/$km^2$) with model `downconv`. White contours represent communes in test and validation. The rest are used in training. We include train, validation and test data to make the visualization easier, and mark in white the communes used for validation and train. This model has no overfitting so visualizing all data together should not distort the perception on its performance.
 
 <img src='imgs/figure_13.jpg'/>
 <hr/>
