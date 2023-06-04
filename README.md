@@ -42,7 +42,7 @@ The IPython notebooks under `notebooks` contain the code to generate the figures
 
 # Extra figures from the paper
 
-The following figures are referenced within the paper
+The following figures are referenced within the paper. In turn, captions ocasionally point to results in the paper.
 
 <a id="fig6"/>**Figure 6**. $\texttt{benelux}$ area of interest, covering 72.213 $km^2$ (top left). Tiling of $1km \times 1km$ over the surroundings of Amsterdam (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
 
@@ -54,36 +54,41 @@ The following figures are referenced within the paper
 <img src='imgs/figure_07.jpg'/>
 <hr/>
 
-<a id="fig8"/>**Figure 8**. Aggregated distributions of class proportions for $\texttt{colombia-ne}$ and $\texttt{benelux}$ (a,b,c,d). Observe that the distributions are quite similar when aggregated from communes and from chips, as it should be, since the chips cover 100\% of communes. This is also a sanity check for the datasets. The small differences come from chips overlapping several communes at their borders. See Tables II and III for label meanings. Figure e) shows the distribution  of commune sizes in both AOIs. Since each chip is 1 $km^2$ this also represents the distribution of communes sizes in $km^2$
+<a id="fig8"/>**Figure 8**. Aggregated distributions of class proportions for $\texttt{colombia-ne}$ and $\texttt{benelux}$ (a,b,c,d). Observe that the distributions are quite similar when aggregated from communes and from chips, as it should be, since the chips cover 100\% of communes. This is also a sanity check for the datasets. The small differences come from chips overlapping several communes at their borders. See Tables I and II for label meanings. Figure e) shows the distribution  of commune sizes in both AOIs. Since each chip is 1 $km^2$ this also represents the distribution of communes sizes in $km^2$
 
 <img src='imgs/figure_08.jpg'/>
 <hr/>
 
-<a id="fig9"/>**Figure 9**: $\texttt{benelux}$ selected RGB images from the commune of Ichtegem (Belgium) with fine grained chip level labels (rows two and four) and proportions at chip level (rows 3 and 5). The commune level proportions are shown besides the chip level proportions for $\texttt{esaworldcover}$ and $\texttt{humanpop}$. Recall that we are training using this *commune proportions* shown here assuming that chips do not have individual labels. When a chip intercepts more than one commune, such as chip $\texttt{006c47afde9e5}$ below, its associated commune level proportions are obtained by combining the proportions of the communes it overlaps, weighted proportionally to the amount of overlapping with each commune. Proportions and labels for individual chips are used only to compute performance metrics. See Tables II and III for label meanings.
+<a id="fig9"/>**Figure 9**: $\texttt{benelux}$ selected RGB images from the commune of Ichtegem (Belgium) with fine grained chip level labels (rows two and four) and proportions at chip level (rows 3 and 5). The commune level proportions are shown besides the chip level proportions for $\texttt{esaworldcover}$ and $\texttt{humanpop}$. Recall that we are training using this *commune proportions* shown here assuming that chips do not have individual labels. When a chip intercepts more than one commune, such as chip $\texttt{006c47afde9e5}$ below, its associated commune level proportions are obtained by combining the proportions of the communes it overlaps, weighted proportionally to the amount of overlapping with each commune. Proportions and labels for individual chips are used only to compute performance metrics. See Tables I and II for label meanings.
 
 <img src='imgs/figure_09.jpg'/>
 <hr/>
 
 
-<a id="fig10"/>**Figure 10**: Data splitting for $\texttt{benelux}$ (left) and $\texttt{colombia-ne}$ (right) so that any commune (municipality) has all its chips within the same split. Train is purple, yellow is test, green is validation.
+<a id="fig10"/>**Figure 10**: Data splitting for `benelux` (left) and `colombia-ne` (right) so that any commune (municipality) has all its chips within the same split. Train is purple, yellow is test, green is validation.
 
 <img src='imgs/figure_10.jpg'/>
 <hr/>
 
-<a id="fig11"/>**Figure 11**: Predicting label proportions for `esaworldcover` over `benelux` classes 1, 2 and 3. White contours represent communes in test and validation. The rest are used in training.
+<a id="fig11"/>**Figure 11**: Predicting label proportions for `esaworldcover` over `benelux` classes 1, 2 and 3 with model `downconv`. White contours represent communes in test and validation. The rest are used in training. We include train, validation and test data to make the visualization easier, and mark in white the communes used for validation and train. This model has no overfitting so visualizing all data together should not distort the perception on its performance.
 
 <img src='imgs/figure_11.jpg'/>
 <hr/>
 
-<a id="fig12"/>**Figure 12**: Predicting label proportions for $\texttt{esaworldcover}$ over $\texttt{colombia-ne}$ classes 1, 2 and 3. Recall that class 3 is largely under represented in this dataset. White contours represent communes in test and validation. The rest are used in training.
+<a id="fig12"/>**Figure 12**: Predicting label proportions for `esaworldcover` over `colombia-ne` classes 1, 2 and 3 with model `downconv`. Recall that class 3 is largely under represented in this dataset. White contours represent communes in test and validation. The rest are used in training. We include train, validation and test data to make the visualization easier, and mark in white the communes used for validation and train. This model has no overfitting so visualizing all data together should not distort the perception on its performance.
 
 <img src='imgs/figure_12.jpg'/>
 <hr/>
 
-
-
-<a id="fig13"/>**Figure 13**: Predicting label proportions for $\texttt{humanpop}$ world cover over $\texttt{benelux}$ class 2 (more than 1600 inhabitants/$km^2$). White contours represent communes in test and validation. The rest are used in training.
+<a id="fig13"/>**Figure 13**: Predicting label proportions for `humanpop` world cover over `benelux` class 2 (more than 1600 inhabitants/$km^2$) with model `downconv`. White contours represent communes in test and validation. The rest are used in training. We include train, validation and test data to make the visualization easier, and mark in white the communes used for validation and train. This model has no overfitting so visualizing all data together should not distort the perception on its performance.
 
 <img src='imgs/figure_13.jpg'/>
 <hr/>
+
+<a id="table-cross-inference"/>**Table cross inference**
+In the case of  humanpop` for `colombia-ne` the large class imbalance produced all models to emit mostly a single class proportions prediction with the majority class. With this, we hypothesized on whether a lack of variability in training data would affect performance and, thus, we made cross inference, using models trained on `benelux` to predict labels in `colombia-ne` and the other way around. The following table shows the performance results when using using the `downconv` model trained in one region to make inference in the other region. We include the results from Table III for reference (rows 1 and 3).  Observe that cross-region inference always degrades performance (row 1 vs row 2 and row 3 vs row 4).
+<img src='imgs/table-cross-inference.png'/>
+<hr/>
+
+
 
