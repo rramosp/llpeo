@@ -70,7 +70,7 @@ The following figures are referenced within the paper
 <img src='imgs/figure_10.jpg'/>
 <hr/>
 
-<a id="fig11"/>**Figure 11**: Predicting label proportions for $\texttt{esaworldcover}$ over $\texttt{benelux}$ classes 1, 2 and 3. White contours represent communes in test and validation. The rest are used in training.
+<a id="fig11"/>**Figure 11**: Predicting label proportions for `esaworldcover` over `benelux` classes 1, 2 and 3. White contours represent communes in test and validation. The rest are used in training.
 
 <img src='imgs/figure_11.jpg'/>
 <hr/>
