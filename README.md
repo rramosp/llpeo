@@ -18,7 +18,7 @@ The four datasets  in our work with Sentinel2 RGB imagery and different labels a
 |benelux |esaworldcover |72213 |10m |https://zenodo.org/record/7935237|
 |benelux |humanpop |72213 |250m |https://zenodo.org/record/7939348
 
-The Sentinel 2 image chips are the same in both $\texttt{colombia-ne}$ datasets and both $\texttt{benelux}$, they differ on the labels. Observe that we train our models with label proportions that we obtain from these labels at coarser geometries (communes or municipalities). We only use the actual labels at to compute chip level performance metrics. In a real world scenario these fine grained labels would **not** be available, only the label proportions.
+The Sentinel 2 image chips are the same in both `colombia-ne` datasets and both `benelux`, they differ on the labels. Observe that we train our models with label proportions that we obtain from these labels at coarser geometries (communes or municipalities). We only use the actual labels at to compute chip level performance metrics. In a real world scenario these fine grained labels would **not** be available, only the label proportions.
 
 # Running the experiments (tranining models)
 
@@ -44,22 +44,22 @@ The IPython notebooks under `notebooks` contain the code to generate the figures
 
 The following figures are referenced within the paper. In turn, captions ocasionally point to results in the paper.
 
-<a id="fig6"/>**Figure 6**. $\texttt{benelux}$ area of interest, covering 72.213 $km^2$ (top left). Tiling of $1km \times 1km$ over the surroundings of Amsterdam (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
+<a id="fig6"/>**Figure 6**. `benelux` area of interest, covering 72.213 $km^2$ (top left). Tiling of $1km \times 1km$ over the surroundings of Amsterdam (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
 
 <img src='imgs/figure_06.jpg'/>
 <hr/>
 
-<a id="fig7"/>**Figure 7**. $\texttt{colombia-ne}$ area of interest, covering 69.191 km$^2$ (top left, on the north west of South America). Tiling of $1km \times 1km$ over the surroundings of the city of Bucaramanga (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
+<a id="fig7"/>**Figure 7**. `colombia-ne` area of interest, covering 69.191 km$^2$ (top left, on the north west of South America). Tiling of $1km \times 1km$ over the surroundings of the city of Bucaramanga (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
 
 <img src='imgs/figure_07.jpg'/>
 <hr/>
 
-<a id="fig8"/>**Figure 8**. Aggregated distributions of class proportions for $\texttt{colombia-ne}$ and $\texttt{benelux}$ (a,b,c,d). Observe that the distributions are quite similar when aggregated from communes and from chips, as it should be, since the chips cover 100\% of communes. This is also a sanity check for the datasets. The small differences come from chips overlapping several communes at their borders. See Tables I and II for label meanings. Figure e) shows the distribution  of commune sizes in both AOIs. Since each chip is 1 $km^2$ this also represents the distribution of communes sizes in $km^2$
+<a id="fig8"/>**Figure 8**. Aggregated distributions of class proportions for `colombia-ne` and `benelux` (a,b,c,d). Observe that the distributions are quite similar when aggregated from communes and from chips, as it should be, since the chips cover 100\% of communes. This is also a sanity check for the datasets. The small differences come from chips overlapping several communes at their borders. See Tables I and II for label meanings. Figure e) shows the distribution  of commune sizes in both AOIs. Since each chip is 1 $km^2$ this also represents the distribution of communes sizes in $km^2$
 
 <img src='imgs/figure_08.jpg'/>
 <hr/>
 
-<a id="fig9"/>**Figure 9**: $\texttt{benelux}$ selected RGB images from the commune of Ichtegem (Belgium) with fine grained chip level labels (rows two and four) and proportions at chip level (rows 3 and 5). The commune level proportions are shown besides the chip level proportions for $\texttt{esaworldcover}$ and $\texttt{humanpop}$. Recall that we are training using this *commune proportions* shown here assuming that chips do not have individual labels. When a chip intercepts more than one commune, such as chip $\texttt{006c47afde9e5}$ below, its associated commune level proportions are obtained by combining the proportions of the communes it overlaps, weighted proportionally to the amount of overlapping with each commune. Proportions and labels for individual chips are used only to compute performance metrics. See Tables I and II for label meanings.
+<a id="fig9"/>**Figure 9**: `benelux` selected RGB images from the commune of Ichtegem (Belgium) with fine grained chip level labels (rows two and four) and proportions at chip level (rows 3 and 5). The commune level proportions are shown besides the chip level proportions for `esaworldcover` and `humanpop`. Recall that we are training using this *commune proportions* shown here assuming that chips do not have individual labels. When a chip intercepts more than one commune, such as chip `006c47afde9e5` below, its associated commune level proportions are obtained by combining the proportions of the communes it overlaps, weighted proportionally to the amount of overlapping with each commune. Proportions and labels for individual chips are used only to compute performance metrics. See Tables I and II for label meanings.
 
 <img src='imgs/figure_09.jpg'/>
 <hr/>
