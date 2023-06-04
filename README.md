@@ -44,12 +44,12 @@ The IPython notebooks under `notebooks` contain the code to generate the figures
 
 The following figures are referenced within the paper
 
-**Figure 6**. $\texttt{benelux}$ area of interest, covering 72.213 $km^2$ (top left). Tiling of $1km \times 1km$ over the surroundings of Amsterdam (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
+<a id="fig6"/>**Figure 6**. $\texttt{benelux}$ area of interest, covering 72.213 $km^2$ (top left). Tiling of $1km \times 1km$ over the surroundings of Amsterdam (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
 
 <img src='imgs/figure_06.jpg'/>
 <hr/>
 
-**Figure 7**. $\texttt{colombia-ne}$ area of interest, covering 69.191 km$^2$ (top left, on the north west of South America). Tiling of $1km \times 1km$ over the surroundings of the city of Bucaramanga (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
+<a id="fig7"/>**Figure 7**. $\texttt{colombia-ne}$ area of interest, covering 69.191 km$^2$ (top left, on the north west of South America). Tiling of $1km \times 1km$ over the surroundings of the city of Bucaramanga (bottom left). Subdivision in communes (municipalities) used to compute label proportions (right).
 
 <img src='imgs/figure_07.jpg'/>
 <hr/>
@@ -59,30 +59,30 @@ The following figures are referenced within the paper
 <img src='imgs/figure_08.jpg'/>
 <hr/>
 
-**Figure 9**: $\texttt{benelux}$ selected RGB images from the commune of Ichtegem (Belgium) with fine grained chip level labels (rows two and four) and proportions at chip level (rows 3 and 5). The commune level proportions are shown besides the chip level proportions for $\texttt{esaworldcover}$ and $\texttt{humanpop}$. Recall that we are training using this *commune proportions* shown here assuming that chips do not have individual labels. When a chip intercepts more than one commune, such as chip $\texttt{006c47afde9e5}$ below, its associated commune level proportions are obtained by combining the proportions of the communes it overlaps, weighted proportionally to the amount of overlapping with each commune. Proportions and labels for individual chips are used only to compute performance metrics. See Tables II and III for label meanings.
+<a id="fig9"/>**Figure 9**: $\texttt{benelux}$ selected RGB images from the commune of Ichtegem (Belgium) with fine grained chip level labels (rows two and four) and proportions at chip level (rows 3 and 5). The commune level proportions are shown besides the chip level proportions for $\texttt{esaworldcover}$ and $\texttt{humanpop}$. Recall that we are training using this *commune proportions* shown here assuming that chips do not have individual labels. When a chip intercepts more than one commune, such as chip $\texttt{006c47afde9e5}$ below, its associated commune level proportions are obtained by combining the proportions of the communes it overlaps, weighted proportionally to the amount of overlapping with each commune. Proportions and labels for individual chips are used only to compute performance metrics. See Tables II and III for label meanings.
 
 <img src='imgs/figure_09.jpg'/>
 <hr/>
 
 
-**Figure 10**: Data splitting for $\texttt{benelux}$ (left) and $\texttt{colombia-ne}$ (right) so that any commune (municipality) has all its chips within the same split. Train is purple, yellow is test, green is validation.
+<a id="fig10"/>**Figure 10**: Data splitting for $\texttt{benelux}$ (left) and $\texttt{colombia-ne}$ (right) so that any commune (municipality) has all its chips within the same split. Train is purple, yellow is test, green is validation.
 
 <img src='imgs/figure_10.jpg'/>
 <hr/>
 
-**Figure 11**: Predicting label proportions for $\texttt{esaworldcover}$ over $\texttt{benelux}$ classes 1, 2 and 3. White contours represent communes in test and validation. The rest are used in training.
+<a id="fig11"/>**Figure 11**: Predicting label proportions for $\texttt{esaworldcover}$ over $\texttt{benelux}$ classes 1, 2 and 3. White contours represent communes in test and validation. The rest are used in training.
 
 <img src='imgs/figure_11.jpg'/>
 <hr/>
 
-**Figure 12**: Predicting label proportions for $\texttt{esaworldcover}$ over $\texttt{colombia-ne}$ classes 1, 2 and 3. Recall that class 3 is largely under represented in this dataset. White contours represent communes in test and validation. The rest are used in training.
+<a id="fig12"/>**Figure 12**: Predicting label proportions for $\texttt{esaworldcover}$ over $\texttt{colombia-ne}$ classes 1, 2 and 3. Recall that class 3 is largely under represented in this dataset. White contours represent communes in test and validation. The rest are used in training.
 
 <img src='imgs/figure_12.jpg'/>
 <hr/>
 
 
 
-**Figure 13**: Predicting label proportions for $\texttt{humanpop}$ world cover over $\texttt{benelux}$ class 2 (more than 1600 inhabitants/$km^2$). White contours represent communes in test and validation. The rest are used in training.
+<a id="fig13"/>**Figure 13**: Predicting label proportions for $\texttt{humanpop}$ world cover over $\texttt{benelux}$ class 2 (more than 1600 inhabitants/$km^2$). White contours represent communes in test and validation. The rest are used in training.
 
 <img src='imgs/figure_13.jpg'/>
 <hr/>
