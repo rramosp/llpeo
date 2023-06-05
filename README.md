@@ -91,4 +91,7 @@ In the case of  `humanpop` for `colombia-ne` the large class imbalance produced 
 <hr/>
 
 
+<a id='table-footprint'>**Table footprint**. Dataset footprint (storage size) for label proportions at commune level, computed as 2 bytes (for `float16` to store a number $\in [0,1]$) $\times$ number of classes $\times$ number of communes; and for segmentation labels computed as 1 byte per pixel (for `uint8` to store a class number) $\times$ (100 $\times$ 100) pixels per chip $\times$ the number of chips (one chip per km$^2$) 
 
+<img src='imgs/table-footprint.png'/>
+<hr/>
