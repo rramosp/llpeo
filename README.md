@@ -40,7 +40,7 @@ you can also use the Docker files under `docker` to start a container configured
 
 The IPython notebooks under `notebooks` contain the code to generate the figures used in the paper (maps, metrics, etc.), run inference on saved models, etc.
 
-# Extra figures from the paper
+# <a id="extra"/> Extra material for the paper
 
 The following figures are referenced within the paper. In turn, captions ocasionally point to results in the paper.
 
